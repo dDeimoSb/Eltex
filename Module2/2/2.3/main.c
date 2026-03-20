@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "calc.h"
+#include <math.h>
 
 int main() {
     Command commands[] = {
@@ -44,12 +45,13 @@ int main() {
             continue;
         }
 
-        if (commands[choice - 1].func == divide && b == 0) {
+        
+        result = commands[choice - 1].func(a, b);
+        if (isnan(result) || isinf(result)) {
             printf("Error: cannot be divided by 0\n");
             continue;
         }
-
-        result = commands[choice - 1].func(a, b);
+        
         printf("Result: %.2lf\n", result);
     }
 

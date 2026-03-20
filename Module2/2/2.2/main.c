@@ -53,7 +53,7 @@ int main() {
                 break;
             case 4:
                 result = divide(a, b);
-                if (isnan(result)) {
+                if (isnan(result) || isinf(result)) {
                     printf("Error: cannot be divided by 0\n");
                 }
                 else {
