@@ -1,0 +1,25 @@
+# object files
+*.o
+*.obj
+
+# static libraries
+*.a
+*.lib
+
+# shared libraries
+*.so
+*.dll
+*.dylib
+
+# executables
+*.exe
+*.out
+*.app
+
+# build folders
+build/
+bin/
+
+# temporary/editor files
+*.log
+*.tmp
