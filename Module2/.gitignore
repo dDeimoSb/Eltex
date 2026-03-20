@@ -23,3 +23,5 @@ bin/
 # temporary/editor files
 *.log
 *.tmp
+
+.vscode/

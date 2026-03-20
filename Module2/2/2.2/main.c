@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "calc.h"
+#include <math.h>
 
 int main() {
     int choice;
@@ -51,10 +52,11 @@ int main() {
                 printf("Result: %.2lf\n", result);
                 break;
             case 4:
-                if (b == 0) {
+                result = divide(a, b);
+                if (isnan(result)) {
                     printf("Error: cannot be divided by 0\n");
-                } else {
-                    result = divide(a, b);
+                }
+                else {
                     printf("Result: %.2lf\n", result);
                 }
                 break;
