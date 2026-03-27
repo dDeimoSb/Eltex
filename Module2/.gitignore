@@ -24,4 +24,4 @@ bin/
 *.log
 *.tmp
 
-.vscode/
+*.vscode/
